@@ -5,6 +5,7 @@ import { Phone, ArrowRight, ShieldCheck, HeartHandshake, Sparkles, CheckCircle2 
 import AnimatedSection from "@/components/AnimatedSection";
 import FloatingElements from "@/components/FloatingElements";
 import WaveDivider from "@/components/WaveDivider";
+import { getAdmissionAcademicYear } from "@/lib/academicYear";
 
 export const metadata: Metadata = {
   title: "Kids covE School of Excellence | Best Montessori & Primary School in Ozhukur, Malappuram",
@@ -65,6 +66,8 @@ const highlights = [
 ];
 
 export default function HomePage() {
+  const academicYear = getAdmissionAcademicYear();
+
   return (
     <>
       {/* ===== HERO SECTION ===== */}
@@ -79,7 +82,7 @@ export default function HomePage() {
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent-yellow/30 border border-accent-yellow/50 rounded-full mb-6 shadow-sm">
                   <span className="animate-wiggle inline-block">🌟</span>
                   <span className="font-body font-bold text-xs sm:text-sm text-text-dark uppercase tracking-wider">
-                    Admissions Booking Open • 2025–26
+                    Admissions Booking Open • {academicYear}
                   </span>
                 </div>
               </AnimatedSection>
@@ -367,7 +370,7 @@ export default function HomePage() {
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
             <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/15 rounded-full text-white font-body font-bold text-xs sm:text-sm uppercase tracking-widest mb-4">
-              <span>🎒</span> Admissions Open • Session 2025–26
+              <span>🎒</span> Admissions Open • Session {academicYear}
             </span>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl mb-6">
               Ready to Give Your Child the Best Start? 🚀

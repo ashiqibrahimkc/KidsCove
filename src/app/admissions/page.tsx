@@ -16,19 +16,22 @@ import AnimatedSection from "@/components/AnimatedSection";
 import FloatingElements from "@/components/FloatingElements";
 import WaveDivider from "@/components/WaveDivider";
 import { BreadcrumbJsonLd, FaqJsonLd } from "@/components/JsonLd";
+import { getAdmissionAcademicYear } from "@/lib/academicYear";
 import AdmissionForm from "./AdmissionForm";
 
+const currentAcademicYear = getAdmissionAcademicYear();
+
 export const metadata: Metadata = {
-  title: "Admissions 2025–26 & Contact Details | Apply Online",
+  title: `Admissions ${currentAcademicYear} & Contact Details | Apply Online`,
   description:
-    "Apply for admission to Kids covE School of Excellence in Ozhukur, Malappuram, Kerala. Learn about admission booking from 1 Jan, procedure from 1 Feb, documents needed, school bus transport, and FAQs.",
+    `Apply for admission to Kids covE School of Excellence in Ozhukur, Malappuram, Kerala. Learn about admission booking from 1 Jan for ${currentAcademicYear}, procedure from 1 Feb, documents needed, school bus transport, and FAQs.`,
   alternates: {
     canonical: "/admissions",
   },
   openGraph: {
-    title: "Admissions 2025–26 | Kids covE School of Excellence, Ozhukur",
+    title: `Admissions ${currentAcademicYear} | Kids covE School of Excellence, Ozhukur`,
     description:
-      "Reserve your child's seat for Montessori 1 to Grade 4. Complete admission steps, documents checklist, and direct WhatsApp enquiry.",
+      `Reserve your child's seat for Montessori 1 to Grade 4 (${currentAcademicYear}). Complete admission steps, documents checklist, and direct WhatsApp enquiry.`,
     url: "/admissions",
   },
 };
@@ -88,9 +91,9 @@ const requiredDocs = [
 
 const faqs = [
   {
-    question: "When does admission booking open for the 2025–26 academic year?",
+    question: `When does admission booking open for the ${currentAcademicYear} academic year?`,
     answer:
-      "Admission booking begins from 1st January onwards, allowing parents to reserve seats in advance. The formal admission procedure commences from 1st February onwards. We recommend early enquiry as seats are limited.",
+      `Admission booking begins from 1st January onwards, allowing parents to reserve seats in advance for the ${currentAcademicYear} academic session. The formal admission procedure commences from 1st February onwards. We recommend early enquiry as seats are limited.`,
   },
   {
     question: "What are the age requirements for Montessori admission?",
@@ -137,7 +140,7 @@ export default function AdmissionsPage() {
           <AnimatedSection>
             <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-accent-yellow/40 rounded-full mb-4 text-text-dark font-body font-bold text-xs sm:text-sm uppercase tracking-widest">
               <span>🎒</span>
-              <span>Session 2025–26</span>
+              <span>Session {currentAcademicYear}</span>
             </span>
             <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl text-text-dark mb-4">
               Admissions &amp; <span className="gradient-text">Contact</span>
