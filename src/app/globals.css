@@ -1,26 +1,102 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #FF6B6B;
+  --color-primary-hover: #FA5252;
+  --color-secondary: #4ECDC4;
+  --color-secondary-hover: #38B2AC;
+  --color-accent-yellow: #FFE66D;
+  --color-accent-yellow-light: #FFF3B0;
+  --color-accent-green: #6BCB77;
+  --color-accent-blue: #4D96FF;
+  --color-accent-purple: #9B5DE5;
+  --color-accent-pink: #FF70A6;
+  --color-text-dark: #1A1A2E;
+  --color-text-body: #4A5568;
+  --color-text-muted: #718096;
+
+  --font-heading: var(--font-bubblegum), cursive, sans-serif;
+  --font-body: var(--font-nunito), sans-serif;
+
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  --animate-wobble: wobble 2s ease-in-out infinite;
+  --animate-bounce-gentle: bounce-gentle 3s ease-in-out infinite;
+  --animate-pulse-soft: pulse-soft 2s ease-in-out infinite;
+  --animate-float: float 4s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+@keyframes wobble {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  15% { transform: translateX(-4px) rotate(-4deg); }
+  30% { transform: translateX(3px) rotate(3deg); }
+  45% { transform: translateX(-3px) rotate(-2deg); }
+  60% { transform: translateX(2px) rotate(1deg); }
+  75% { transform: translateX(-1px) rotate(-1deg); }
+}
+
+@keyframes bounce-gentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.05); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground: #1A1A2E;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-nunito), sans-serif;
+  overflow-x: hidden;
+}
+
+.bg-gradient-hero {
+  background: linear-gradient(135deg, #FFF9F0 0%, #FFF0F5 50%, #F0F8FF 100%);
+}
+
+.bg-gradient-cool {
+  background: linear-gradient(135deg, #F0F4FF 0%, #F5F0FF 50%, #FFF0F8 100%);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #FF6B6B, #FF70A6, #9B5DE5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 50;
+  width: 56px;
+  height: 56px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 30px -5px rgba(37, 211, 102, 0.6);
 }
