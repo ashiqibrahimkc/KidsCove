@@ -89,7 +89,7 @@ export default function Navbar() {
               <div className="w-8 h-8 rounded-full bg-secondary/15 flex items-center justify-center text-secondary">
                 <Phone className="w-4 h-4" />
               </div>
-              <span className="hidden lg:inline">+91 8113000247</span>
+              <span className="hidden lg:inline">+91 811 3000 247</span>
             </a>
             <Link
               href="/admissions"
@@ -138,7 +138,7 @@ export default function Navbar() {
                 <div className="w-8 h-8 rounded-full bg-secondary/15 flex items-center justify-center text-secondary">
                   <Phone className="w-4 h-4" />
                 </div>
-                <span>+91 8113000247</span>
+                <span>+91 811 3000 247</span>
               </a>
               <Link
                 href="/admissions"
