@@ -11,7 +11,7 @@
 export function getAdmissionAcademicYear(date: Date = new Date()): string {
   const currentYear = date.getFullYear();
   const currentMonth = date.getMonth(); // 0 = Jan, 7 = Aug, 11 = Dec
-  const startYear = currentMonth >= 7 ? currentYear + 1 : currentYear - 1;
+  const startYear = currentMonth >= 7 ? currentYear + 1 : currentYear;
   const endYearShort = String(startYear + 1).slice(-2);
   return `${startYear}–${endYearShort}`;
 }
