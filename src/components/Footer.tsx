@@ -171,8 +171,8 @@ export default function Footer() {
             </p>
             <p className="text-xs text-white/40 font-body flex items-center gap-1">
               Made with{" "}
-              <span className="text-accent-pink animate-pulse-soft">❤</span> for
-              little learners
+              <span className="text-accent-pink animate-pulse-soft">❤</span> by
+              <a href="https://byten.in"> byten.in</a>
             </p>
           </div>
         </div>
