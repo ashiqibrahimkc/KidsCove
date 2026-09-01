@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/about", label: "About Us" },
   { href: "/academics", label: "Academics & Gallery" },
   { href: "/admissions", label: "Admissions" },
+  { href: "/careers", label: "Careers" },
 ];
 
 export default function Navbar() {

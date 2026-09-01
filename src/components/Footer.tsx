@@ -6,6 +6,7 @@ const quickLinks = [
   { href: "/about", label: "About Us" },
   { href: "/academics", label: "Academics & Gallery" },
   { href: "/admissions", label: "Admissions & Contact" },
+  { href: "/careers", label: "Careers" },
 ];
 
 export default function Footer() {
