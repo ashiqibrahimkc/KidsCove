@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { Compass, Target, Clock, Award, Shield, Users, Heart } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 import FloatingElements from "@/components/FloatingElements";
@@ -63,9 +62,12 @@ export default function AboutPage() {
               <span>📖</span>
               <span>Our Story &amp; Philosophy</span>
             </span>
-            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl text-text-dark mb-5">
+            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl text-text-dark mb-3">
               About <span className="gradient-text">Kids covE</span>
             </h1>
+            <p className="font-body text-xs sm:text-sm text-text-muted font-bold uppercase tracking-wider mb-5">
+              Run By K C Ibrahim Haji Memorial Educational Trust
+            </p>
             <p className="font-body text-base sm:text-lg text-text-body max-w-2xl mx-auto leading-relaxed">
               Founded in 2022 in Ozhukur, Kerala, Kids covE School of Excellence
               is a vibrant community where children discover the joy of
@@ -115,22 +117,16 @@ export default function AboutPage() {
                 <span className="gradient-text">Excellence</span>
               </h2>
               <p className="font-body text-base sm:text-lg text-text-body leading-relaxed mb-4">
-                <strong>Kids covE School of Excellence</strong> was founded in{" "}
-                <strong>2022</strong> at Ozhukur Palathinghal, Malappuram with a
-                heartfelt mission: to create a sanctuary where early childhood
-                education blends world-class Montessori methods with joyful
-                discovery, all within reach of every local family.
+                Established in <strong>2022</strong>, the story of <strong>Kids covE School of Excellence</strong> is one of resilience, unwavering vision, and a profound commitment to educational quality. What began as a &ldquo;simple dream&rdquo; was built from the ground up, starting from scratch with a modest but determined foundation of fewer than 10 students and just two dedicated teachers.
               </p>
               <p className="font-body text-base sm:text-lg text-text-body leading-relaxed mb-4">
-                We believe that every child is born with limitless potential and
-                an innate curiosity about the world around them. Our educators
-                foster an enthusiastic learning atmosphere where children learn
-                by doing, questioning, creating, and collaborating.
+                From its inception, the school was more than just an institution; it was affectionately regarded as the &ldquo;6th member of the family&rdquo;&mdash;a living, breathing entity that required nurturing, sacrifice, and a &ldquo;strong and raw&rdquo; determination to succeed. This personal connection drove the founders to create a sanctuary where curiosity could meet compassion.
+              </p>
+              <p className="font-body text-base sm:text-lg text-text-body leading-relaxed mb-4">
+                The journey was not without its challenges. In the early days, the school faced significant backlash and external pressure, largely because of its uncompromising focus on excellence rather than following traditional, well-trodden paths. Despite these hurdles, the leadership remained steadfast in their goal to bring high-quality, professional education to the Ozhukur area while maintaining an affordable fee structure.
               </p>
               <p className="font-body text-base sm:text-lg text-text-body leading-relaxed">
-                From academic foundations and bilingual expression to swimming,
-                karate, yoga, and eco-initiatives, we ensure our young learners
-                grow into confident, compassionate, and capable individuals.
+                Today, that vision has thrived. Kids covE has grown into a vibrant community, guiding students from their early Montessori years through the 4th standard. It stands as a testament to the idea that a school built on the values of inclusivity, critical thinking, and holistic development can turn every school day into a journey of discovery and growth.
               </p>
             </AnimatedSection>
           </div>
@@ -253,7 +249,7 @@ export default function AboutPage() {
           <AnimatedSection>
             <div className="max-w-4xl mx-auto bg-white rounded-[2rem] shadow-xl overflow-hidden border border-amber-200/60">
               <div className="grid md:grid-cols-5 gap-0">
-                {/* Principal image placeholder */}
+                {/* Principal image */}
                 <div className="md:col-span-2 relative bg-gradient-to-br from-primary/10 via-accent-pink/10 to-accent-yellow/10 p-8 flex items-center justify-center">
                   <div className="relative text-center">
                     <div className="w-44 h-44 sm:w-52 sm:h-52 rounded-full overflow-hidden border-4 border-white shadow-xl mx-auto">
@@ -267,7 +263,7 @@ export default function AboutPage() {
                     </div>
                     <div className="mt-4 inline-block bg-primary text-white px-4 py-1 rounded-full shadow-md">
                       <p className="font-body font-bold text-xs">
-                        School Leadership
+                        Principal&apos;s Message
                       </p>
                     </div>
                   </div>
@@ -276,35 +272,69 @@ export default function AboutPage() {
                 {/* Message text */}
                 <div className="md:col-span-3 p-8 sm:p-10 flex flex-col justify-center">
                   <p className="font-heading text-xl sm:text-2xl text-text-dark mb-3">
-                    &ldquo;Inspiring Little Learners to Reach for the Stars&rdquo;
+                    &ldquo;From a Simple Dream to a Thriving Institution&rdquo;
                   </p>
                   <p className="font-body text-base text-text-body leading-relaxed mb-4">
-                    Welcome to Kids covE School of Excellence. We are dedicated
-                    to providing every child with an atmosphere of respect, joy,
-                    and boundless encouragement.
+                    From the first brick laid in 2022 to the vibrant hallways we walk today, watching Kids covE – School of Excellence grow from a simple dream into a thriving institution has been the greatest journey of my life. There is a deep sense of nostalgia in looking back at our beginnings; what started as &ldquo;scratch&rdquo; has been meticulously curated into a sanctuary where curiosity meets compassion.
                   </p>
                   <p className="font-body text-base text-text-body leading-relaxed mb-6">
-                    Our focus goes beyond textbooks: we nurture empathy,
-                    curiosity, creativity, and healthy habits so every student
-                    steps forward with confidence and character.
+                    Today, we are more than just a school; we are a community dedicated to a holistic education that remains accessible to all. Seeing our Montessori labs filled with life and our students mastering everything from art to karate reminds me that we haven&apos;t just built a building&mdash;we&apos;ve built a future. It is an honor to lead this institution as we continue to turn every school day into a journey of discovery and growth.
                   </p>
-                  <div className="pt-4 border-t border-gray-100 flex items-center justify-between">
-                    <div>
-                      <p className="font-heading text-lg text-primary font-bold">
-                        Kids covE Management &amp; Faculty
-                      </p>
-                      <p className="font-body text-xs text-text-muted">
-                        School of Excellence, Ozhukur
-                      </p>
-                    </div>
-                    <Link
-                      href="/admissions"
-                      className="text-xs font-body font-bold text-secondary-dark hover:underline"
-                    >
-                      Visit Campus →
-                    </Link>
+                  <div className="pt-4 border-t border-gray-100">
+                    <p className="font-heading text-lg text-primary font-bold">
+                      From the Principal&apos;s Desk
+                    </p>
+                    <p className="font-body text-xs text-text-muted">
+                      Kids covE School of Excellence, Ozhukur
+                    </p>
                   </div>
                 </div>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* ===== CHAIRMAN'S MESSAGE ===== */}
+      <WaveDivider color="#F0F9FF" />
+      <section className="bg-[#F0F9FF] py-16 sm:py-24 -mt-1">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-accent-blue/15 rounded-full text-accent-blue font-body font-bold text-xs sm:text-sm uppercase tracking-widest mb-3">
+              <span>💬</span> Chairman&apos;s Desk
+            </span>
+            <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-text-dark">
+              Message from the Chairman
+            </h2>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="max-w-4xl mx-auto bg-white rounded-[2rem] shadow-xl p-8 sm:p-10 border border-blue-100/60">
+              <p className="font-body text-base sm:text-lg text-text-body leading-relaxed mb-4">
+                Welcome to our school website! When we established this institution in 2022 under the <strong>K C Ibrahim Haji Memorial Educational Trust</strong>, our core vision was to create a warm, nurturing environment where young learners feel safe, curious, and excited to explore the world around them. Beyond being an educational institution, our principal goal and ambition have always been to bring high-quality, professional education to the Ozhukur area while maintaining an affordable fee structure.
+              </p>
+              <p className="font-body text-base sm:text-lg text-text-body leading-relaxed mb-4">
+                Today, as we proudly guide our students from their early steps through the 4th standard, seeing that vision thrive fills me with immense joy and gratitude.
+              </p>
+              <p className="font-body text-base sm:text-lg text-text-body leading-relaxed mb-4">
+                At Kids covE School of Excellence, primary education is about far more than textbooks and exams; it is about building character, fostering creativity, and cultivating a lifelong love for learning. We focus on a holistic approach where strong academic foundations, values, and individual care go hand in hand. Every child is unique, and our dedicated team of educators works tirelessly to discover and nurture the potential within each student.
+              </p>
+              <p className="font-body text-base sm:text-lg text-text-body leading-relaxed mb-4">
+                Our success in a short period is a testament to the trust placed in us by parents and the tireless efforts of our faculty and staff. As our young students build strong roots for a bright future, we remain deeply committed to upholding high standards of excellence, safety, and care.
+              </p>
+              <p className="font-body text-base sm:text-lg text-text-body leading-relaxed mb-6">
+                Thank you for being a part of our school family. I invite you to explore our website to discover the vibrant life and learning that define our school community.
+              </p>
+              <div className="pt-5 border-t border-gray-100">
+                <p className="font-body text-sm text-text-body italic mb-3">
+                  With warm and best regards,
+                </p>
+                <p className="font-heading text-xl text-text-dark font-bold">
+                  Mohamed Karattu Chali
+                </p>
+                <p className="font-body text-sm text-text-muted">
+                  Chairman, Kids covE School of Excellence, Ozhukur
+                </p>
               </div>
             </div>
           </AnimatedSection>

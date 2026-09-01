@@ -374,12 +374,24 @@ export default function AdmissionsPage() {
                         <p className="font-bold text-xs text-text-muted uppercase tracking-wider mb-1">
                           Email Address
                         </p>
-                        <a
-                          href="mailto:ozhukurkids@gmail.com"
-                          className="text-sm font-semibold text-text-dark hover:text-primary transition-colors"
-                        >
-                          ozhukurkids@gmail.com
-                        </a>
+                        <p className="text-sm text-text-dark">
+                          <span className="font-bold">School:</span>{" "}
+                          <a
+                            href="mailto:ozhukurkids@gmail.com"
+                            className="font-semibold hover:text-primary transition-colors"
+                          >
+                            ozhukurkids@gmail.com
+                          </a>
+                        </p>
+                        <p className="text-sm text-text-dark mt-1">
+                          <span className="font-bold">Chairman:</span>{" "}
+                          <a
+                            href="mailto:mkchali@gmail.com"
+                            className="font-semibold hover:text-primary transition-colors"
+                          >
+                            mkchali@gmail.com
+                          </a>
+                        </p>
                       </div>
                     </div>
 

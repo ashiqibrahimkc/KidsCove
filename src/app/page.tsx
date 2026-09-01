@@ -54,15 +54,56 @@ const whyChooseUs = [
   },
 ];
 
-const highlights = [
-  { icon: "💻", label: "Smart Classrooms", sub: "Interactive Digital Boards" },
-  { icon: "🧩", label: "Montessori Lab", sub: "Hands-on Sensory Learning" },
-  { icon: "🖥️", label: "Computer Lab", sub: "Digital Literacy & Skills" },
-  { icon: "🚌", label: "School Bus Service", sub: "Safe Commute with Tracking" },
-  { icon: "📹", label: "CCTV Surveillance", sub: "24/7 Campus-wide Safety" },
-  { icon: "📖", label: "School Library", sub: "Storybooks & Reading Corner" },
-  { icon: "🌳", label: "Nature Play Area", sub: "Open & Green Recreation" },
-  { icon: "🗣️", label: "ECHO & English Clubs", sub: "Outreach & Public Speaking" },
+const highlightCategories = [
+  {
+    title: "Academic & Foundational Learning",
+    emoji: "📚",
+    color: "from-secondary/10 to-accent-green/10",
+    border: "border-secondary/20",
+    items: [
+      "Montessori-Based Experiential & Hands-On Learning",
+      "Early Phonics, Vocabulary, & Language Development",
+      "Individualized Attention with Ideal Teacher-Student Ratios",
+      "Foundational Numeracy & STEM Activity Kits",
+      "Activity-Based Curriculum Designed for Early Learners",
+    ],
+  },
+  {
+    title: "Infrastructure & Safety",
+    emoji: "🏫",
+    color: "from-accent-blue/10 to-accent-purple/10",
+    border: "border-accent-blue/20",
+    items: [
+      "Safe, Hygienic, & Child-Proofed Campus",
+      "Dedicated First Aid & Emergency Medical Care",
+      "Clean Purified Drinking Water & Regular Sanitation",
+      "Fire Safety Equipment & Secure Gated Access",
+      "GPS-Tracked Safe School Transport",
+    ],
+  },
+  {
+    title: "Co-Curricular & Early Development",
+    emoji: "🎨",
+    color: "from-accent-pink/10 to-primary/10",
+    border: "border-accent-pink/20",
+    items: [
+      "Bright, Vibrant Play Areas & Indoor Game Activity Zones",
+      "Music, Storytelling, & Creative Art Corner",
+      "Physical Education, Gross Motor Skill, & Coordination Games",
+      "Stage Exposure & Confidence-Building Public Speaking Activities",
+    ],
+  },
+  {
+    title: "Parent Support & Communication",
+    emoji: "💬",
+    color: "from-accent-yellow/10 to-primary/10",
+    border: "border-accent-yellow/20",
+    items: [
+      "Real-Time Daily Updates & Attendance via Parent App (Under Process)",
+      "Parent-Teacher Interaction Sessions (PTMs)",
+      "Transparent, Affordable Fee Structure",
+    ],
+  },
 ];
 
 export default function HomePage() {
@@ -96,6 +137,12 @@ export default function HomePage() {
                     School of Excellence
                   </span>
                 </h1>
+              </AnimatedSection>
+
+              <AnimatedSection delay={120}>
+                <p className="font-body text-sm sm:text-base text-primary font-bold italic tracking-wide mb-4 max-w-xl mx-auto lg:mx-0">
+                  Empowering Curiosity. Cultivating Excellence.
+                </p>
               </AnimatedSection>
 
               <AnimatedSection delay={200}>
@@ -338,21 +385,29 @@ export default function HomePage() {
           </AnimatedSection>
 
           <AnimatedSection stagger>
-            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-              {highlights.map((item) => (
+            <div className="grid sm:grid-cols-2 gap-6">
+              {highlightCategories.map((cat) => (
                 <div
-                  key={item.label}
-                  className="bg-white p-6 rounded-2xl text-center shadow-sm hover:shadow-lg transition-all duration-300 border border-amber-100 hover:-translate-y-1 group"
+                  key={cat.title}
+                  className={`bg-white p-7 rounded-3xl border ${cat.border} shadow-sm hover:shadow-lg transition-all duration-300`}
                 >
-                  <span className="text-4xl sm:text-5xl block mb-3 group-hover:scale-110 transition-transform">
-                    {item.icon}
-                  </span>
-                  <h3 className="font-heading text-base sm:text-lg text-text-dark mb-1">
-                    {item.label}
-                  </h3>
-                  <p className="font-body text-xs text-text-muted font-medium">
-                    {item.sub}
-                  </p>
+                  <div className="flex items-center gap-3 mb-5">
+                    <span className="text-3xl">{cat.emoji}</span>
+                    <h3 className="font-heading text-lg sm:text-xl text-text-dark">
+                      {cat.title}
+                    </h3>
+                  </div>
+                  <ul className="space-y-2.5">
+                    {cat.items.map((item) => (
+                      <li
+                        key={item}
+                        className="flex items-start gap-2.5 font-body text-sm text-text-body"
+                      >
+                        <span className="text-primary font-bold mt-0.5 shrink-0">✓</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               ))}
             </div>
