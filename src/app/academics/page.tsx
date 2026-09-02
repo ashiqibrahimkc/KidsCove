@@ -185,34 +185,74 @@ const facilities = [
 
 const galleryImages = [
   {
-    src: "/images/hero.png",
-    alt: "Kids covE School Campus & Students",
-    label: "Main Campus & Play Area",
-    span: "col-span-2 row-span-2",
+    src: "/images/school.jpeg",
+    alt: "Kids covE Main Campus & School Building",
+    label: "Main Campus & School Building",
   },
   {
-    src: "/images/classroom.png",
-    alt: "Montessori Classroom",
-    label: "Montessori Classroom",
-    span: "",
+    src: "/images/karat.jpeg",
+    alt: "Karate & Martial Arts Coaching",
+    label: "Karate & Martial Arts Coaching",
+  },
+  {
+    src: "/images/Drawing .jpeg",
+    alt: "Drawing & Creative Art Corner",
+    label: "Drawing & Creative Art Corner",
+  },
+  {
+    src: "/images/activity 1.jpeg",
+    alt: "Hands-on Montessori Learning",
+    label: "Hands-on Montessori Learning",
+  },
+  {
+    src: "/images/activity 2.jpeg",
+    alt: "Interactive Classroom Activities",
+    label: "Interactive Classroom Activities",
   },
   {
     src: "/images/students.png",
-    alt: "Joyful Learners",
+    alt: "Joyful Learners at Kids covE",
     label: "Our Happy Students",
-    span: "",
   },
   {
-    src: "/images/playground.png",
-    alt: "Outdoor Recreation",
-    label: "Nature-Friendly Playground",
-    span: "col-span-2",
+    src: "/images/gallery.jpeg",
+    alt: "Sensory & Experiential Education",
+    label: "Sensory & Experiential Education",
   },
   {
-    src: "/images/activities.png",
-    alt: "Extracurricular Activities",
-    label: "Karate, Yoga & Sports",
-    span: "col-span-2",
+    src: "/images/gallery 1.jpeg",
+    alt: "Early Phonics & Language Skills",
+    label: "Early Phonics & Language Skills",
+  },
+  {
+    src: "/images/gallery 2.jpeg",
+    alt: "Joyful Moments with Friends",
+    label: "Joyful Moments with Friends",
+  },
+  {
+    src: "/images/gallery 3.jpeg",
+    alt: "Foundational STEM & Numeracy",
+    label: "Foundational STEM & Numeracy",
+  },
+  {
+    src: "/images/gallery 4.jpeg",
+    alt: "Group Activity & Teamwork",
+    label: "Group Activity & Teamwork",
+  },
+  {
+    src: "/images/gallery 5.jpeg",
+    alt: "Early Childhood Development",
+    label: "Early Childhood Development",
+  },
+  {
+    src: "/images/gallery 6.jpeg",
+    alt: "Practical Life Skills Training",
+    label: "Practical Life Skills Training",
+  },
+  {
+    src: "/images/gallery 7.jpeg",
+    alt: "Vibrant School Community",
+    label: "Vibrant School Community",
   },
 ];
 
@@ -458,8 +498,8 @@ export default function AcademicsPage() {
                 <div className="absolute -inset-4 bg-gradient-to-br from-accent-pink/20 via-accent-purple/10 to-accent-yellow/20 rounded-[3rem] blur-xl" />
                 <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
                   <Image
-                    src="/images/activities.png"
-                    alt="Students practicing Karate and Sports at Kids covE School"
+                    src="/images/karat.jpeg"
+                    alt="Students practicing Karate and Martial Arts at Kids covE School"
                     width={600}
                     height={450}
                     className="w-full h-auto object-cover"

@@ -129,11 +129,13 @@ export default function HomePage() {
               </AnimatedSection>
 
               <AnimatedSection delay={100}>
-                <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-tight mb-6">
-                  Welcome to{" "}
-                  <span className="gradient-text">Kids covE</span>
+                <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-[2.6rem] xl:text-5xl 2xl:text-6xl leading-tight mb-6">
+                  <span className="inline sm:whitespace-nowrap">
+                    Welcome to{" "}
+                    <span className="gradient-text whitespace-nowrap">Kids covE</span>
+                  </span>
                   <br />
-                  <span className="text-2xl sm:text-4xl lg:text-5xl text-text-dark">
+                  <span className="text-xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl text-text-dark block mt-1">
                     School of Excellence
                   </span>
                 </h1>
@@ -209,8 +211,8 @@ export default function HomePage() {
                 <div className="absolute -inset-4 bg-gradient-to-br from-accent-yellow/30 via-primary/20 to-accent-pink/30 rounded-[3rem] blur-2xl" />
                 <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
                   <Image
-                    src="/images/hero.png"
-                    alt="Happy children learning and playing at Kids covE School of Excellence"
+                    src="/images/school.jpeg"
+                    alt="Kids covE School of Excellence campus building in Ozhukur"
                     width={700}
                     height={500}
                     className="w-full h-auto object-cover"

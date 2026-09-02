@@ -64,10 +64,10 @@ export const metadata: Metadata = {
     siteName: "Kids covE School of Excellence",
     images: [
       {
-        url: "/images/hero.png",
+        url: "/images/school.jpeg",
         width: 1200,
         height: 630,
-        alt: "Kids covE School of Excellence Campus and Students",
+        alt: "Kids covE School of Excellence Campus Building",
       },
     ],
     locale: "en_IN",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     title: "Kids covE School of Excellence | Ozhukur, Malappuram",
     description:
       "Nurturing Montessori & Primary school in Ozhukur, Malappuram with holistic learning, sports, and modern facilities.",
-    images: ["/images/hero.png"],
+    images: ["/images/school.jpeg"],
   },
   robots: {
     index: true,

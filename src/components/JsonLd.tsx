@@ -5,8 +5,8 @@ export function SchoolJsonLd() {
     name: "Kids covE School of Excellence",
     alternateName: ["Kids covE", "Kids covE Ozhukur", "Kids covE School"],
     url: "https://kidscoveschool.com",
-    logo: "https://kidscoveschool.com/images/hero.png",
-    image: "https://kidscoveschool.com/images/hero.png",
+    logo: "https://kidscoveschool.com/images/school.jpeg",
+    image: "https://kidscoveschool.com/images/school.jpeg",
     description:
       "Kids covE School of Excellence is a premier Montessori and Primary school in Ozhukur, Malappuram, Kerala, offering holistic early education, Montessori lab, swimming, karate, roller skating, yoga, and interactive smart classrooms at affordable fees.",
     foundingDate: "2022",

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, Phone } from "lucide-react";
@@ -43,10 +44,15 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Brand Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-primary to-accent-pink flex items-center justify-center shadow-md shadow-primary/20 group-hover:scale-105 transition-transform duration-300">
-              <span className="text-white font-heading text-2xl font-bold">
-                K
-              </span>
+            <div className="relative w-11 h-11 rounded-full overflow-hidden shadow-md flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+              <Image
+                src="/images/selogo.png"
+                alt="Kids covE School of Excellence Logo"
+                width={44}
+                height={44}
+                className="w-full h-full "
+                priority
+              />
             </div>
             <div>
               <span className="font-heading text-2xl text-text-dark tracking-tight block">
