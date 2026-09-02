@@ -14,9 +14,11 @@
   --color-text-dark: #1A1A2E;
   --color-text-body: #4A5568;
   --color-text-muted: #718096;
+  --color-brand-amber: #C87A1E;
 
   --font-heading: var(--font-bubblegum), cursive, sans-serif;
   --font-body: var(--font-nunito), sans-serif;
+  --font-brand: var(--font-marcellus), serif;
 
   --animate-wiggle: wiggle 1s ease-in-out infinite;
   --animate-wobble: wobble 2s ease-in-out infinite;

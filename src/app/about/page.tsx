@@ -88,7 +88,7 @@ export default function AboutPage() {
                 <div className="absolute -inset-4 bg-gradient-to-br from-secondary/20 via-accent-blue/10 to-accent-purple/20 rounded-[3rem] blur-xl" />
                 <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
                   <Image
-                    src="/images/students.png"
+                    src="/images/gallery 7.jpeg"
                     alt="Students enjoying learning at Kids covE School"
                     width={600}
                     height={400}

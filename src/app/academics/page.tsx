@@ -207,13 +207,9 @@ const galleryImages = [
   {
     src: "/images/activity 2.jpeg",
     alt: "Interactive Classroom Activities",
-    label: "Interactive Classroom Activities",
+    label: "Co-Curricular Activities",
   },
-  {
-    src: "/images/students.png",
-    alt: "Joyful Learners at Kids covE",
-    label: "Our Happy Students",
-  },
+ 
   {
     src: "/images/gallery.jpeg",
     alt: "Sensory & Experiential Education",
@@ -222,37 +218,37 @@ const galleryImages = [
   {
     src: "/images/gallery 1.jpeg",
     alt: "Early Phonics & Language Skills",
-    label: "Early Phonics & Language Skills",
+    label: "Parent-Teacher Interaction",
   },
   {
     src: "/images/gallery 2.jpeg",
     alt: "Joyful Moments with Friends",
-    label: "Joyful Moments with Friends",
+    label: "Our Happy Students",
   },
   {
     src: "/images/gallery 3.jpeg",
     alt: "Foundational STEM & Numeracy",
-    label: "Foundational STEM & Numeracy",
+    label: "Flowers Day Celebration",
   },
   {
     src: "/images/gallery 4.jpeg",
     alt: "Group Activity & Teamwork",
-    label: "Group Activity & Teamwork",
+    label: "Our teaching staff",
   },
   {
     src: "/images/gallery 5.jpeg",
     alt: "Early Childhood Development",
-    label: "Early Childhood Development",
+    label: "Zoo field trip",
   },
   {
     src: "/images/gallery 6.jpeg",
     alt: "Practical Life Skills Training",
-    label: "Practical Life Skills Training",
+    label: "Exploring marine life",
   },
   {
     src: "/images/gallery 7.jpeg",
     alt: "Vibrant School Community",
-    label: "Vibrant School Community",
+    label: "Happy Moments with Friends",
   },
 ];
 

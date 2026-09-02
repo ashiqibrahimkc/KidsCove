@@ -55,10 +55,10 @@ export default function Navbar() {
               />
             </div>
             <div>
-              <span className="font-heading text-2xl text-text-dark tracking-tight block">
+              <span className="font-brand text-[1.65rem] text-brand-amber tracking-tight block leading-none">
                 Kids covE
               </span>
-              <span className="text-[10px] font-body text-primary font-bold -mt-1 tracking-wider uppercase block">
+              <span className="text-[11px] font-body text-black font-bold tracking-normal block mt-1">
                 School of Excellence
               </span>
             </div>

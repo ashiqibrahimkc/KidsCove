@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Nunito, Bubblegum_Sans } from "next/font/google";
+import { Nunito, Bubblegum_Sans, Marcellus } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -15,6 +15,13 @@ const nunito = Nunito({
 
 const bubblegum = Bubblegum_Sans({
   variable: "--font-bubblegum",
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+});
+
+const marcellus = Marcellus({
+  variable: "--font-marcellus",
   subsets: ["latin"],
   weight: "400",
   display: "swap",
@@ -107,7 +114,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${nunito.variable} ${bubblegum.variable} h-full antialiased`}
+      className={`${nunito.variable} ${bubblegum.variable} ${marcellus.variable} h-full antialiased`}
     >
       <head>
         <SchoolJsonLd />
