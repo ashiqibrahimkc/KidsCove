@@ -185,9 +185,39 @@ const facilities = [
 
 const galleryImages = [
   {
+    src: "/images/grad gala.jpeg",
+    alt: "Montessori 3 Convocation & Grad Gala Ceremony at Kids covE School",
+    label: "Montessori Convocation & Grad Gala",
+  },
+  {
+    src: "/images/students.jpeg",
+    alt: "Students in roller skating practice with safety helmets and gear at Kids covE School",
+    label: "Roller Skating Coaching & Sports",
+  },
+  {
     src: "/images/school.jpeg",
     alt: "Kids covE Main Campus & School Building",
     label: "Main Campus & School Building",
+  },
+  {
+    src: "/images/staff.jpeg",
+    alt: "Our dedicated teaching faculty and staff team at Kids covE School of Excellence",
+    label: "Our Dedicated Faculty & Staff",
+  },
+  {
+    src: "/images/colours day.jpeg",
+    alt: "Colours Day celebration with teachers and school leadership",
+    label: "Colours Day Celebration",
+  },
+  {
+    src: "/images/onam.jpeg",
+    alt: "Onam celebration with floral pookalam carpet and traditional attire",
+    label: "Onam Festival Celebration",
+  },
+  {
+    src: "/images/independence day.jpeg",
+    alt: "Independence Day celebration at Kids covE School of Excellence",
+    label: "Independence Day Celebration",
   },
   {
     src: "/images/karat.jpeg",
@@ -209,7 +239,6 @@ const galleryImages = [
     alt: "Interactive Classroom Activities",
     label: "Co-Curricular Activities",
   },
- 
   {
     src: "/images/gallery.jpeg",
     alt: "Sensory & Experiential Education",
@@ -230,20 +259,16 @@ const galleryImages = [
     alt: "Foundational STEM & Numeracy",
     label: "Flowers Day Celebration",
   },
-  {
-    src: "/images/gallery 4.jpeg",
-    alt: "Group Activity & Teamwork",
-    label: "Our teaching staff",
-  },
+  
   {
     src: "/images/gallery 5.jpeg",
     alt: "Early Childhood Development",
-    label: "Zoo field trip",
+    label: "Zoo Field Trip",
   },
   {
     src: "/images/gallery 6.jpeg",
     alt: "Practical Life Skills Training",
-    label: "Exploring marine life",
+    label: "Exploring Marine Life",
   },
   {
     src: "/images/gallery 7.jpeg",
@@ -488,18 +513,41 @@ export default function AcademicsPage() {
               </div>
             </AnimatedSection>
 
-            {/* Activities Photo */}
-            <AnimatedSection direction="right">
-              <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-br from-accent-pink/20 via-accent-purple/10 to-accent-yellow/20 rounded-[3rem] blur-xl" />
-                <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
+            {/* Activities Photos */}
+            <AnimatedSection direction="right" className="space-y-6">
+              <div className="relative group">
+                <div className="absolute -inset-3 bg-gradient-to-br from-accent-blue/20 via-primary/10 to-accent-yellow/20 rounded-[2.5rem] blur-xl" />
+                <div className="relative rounded-[2rem] overflow-hidden shadow-xl border-4 border-white bg-white">
+                  <Image
+                    src="/images/students.jpeg"
+                    alt="Students practicing Roller Skating with safety gear at Kids covE School"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto object-cover group-hover:scale-102 transition-transform duration-500"
+                  />
+                  <div className="p-3.5 bg-white text-center border-t border-gray-100">
+                    <p className="font-heading text-sm text-text-dark font-bold">
+                      🛼 Roller Skating Coaching
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative group">
+                <div className="absolute -inset-3 bg-gradient-to-br from-accent-pink/20 via-accent-purple/10 to-accent-yellow/20 rounded-[2.5rem] blur-xl" />
+                <div className="relative rounded-[2rem] overflow-hidden shadow-xl border-4 border-white bg-white">
                   <Image
                     src="/images/karat.jpeg"
                     alt="Students practicing Karate and Martial Arts at Kids covE School"
                     width={600}
-                    height={450}
-                    className="w-full h-auto object-cover"
+                    height={400}
+                    className="w-full h-auto object-cover group-hover:scale-102 transition-transform duration-500"
                   />
+                  <div className="p-3.5 bg-white text-center border-t border-gray-100">
+                    <p className="font-heading text-sm text-text-dark font-bold">
+                      🥋 Karate &amp; Martial Arts Training
+                    </p>
+                  </div>
                 </div>
               </div>
             </AnimatedSection>
